@@ -24,7 +24,8 @@ password = str(chosen_element)                      #first character of password
 while (letters[len(letters) - 1] != 0) or (numbers[len(numbers) - 1] != 0) or (symbols[len(symbols) - 1] != 0):
     chosen_set = random.choice(characters)
     if chosen_set[len(chosen_set) - 1] != 0:        #if we didn't already use them up already
-        chosen_element = random.choice(chosen_set)
+        random_index = random.randrange(len(chosen_set) - 1)   #excluding the last element that has the number of elements needed
+        chosen_element = chosen_set[random_index]
         chosen_set[len(chosen_set)-1] -= 1          #we eliminate the one we have chosen
         password = password + str(chosen_element)   #add to the password
 
