@@ -60,7 +60,7 @@ class Snake():
         return False
     
     def detect_wall_colision(self):
-        if self.segments[0].xcor() == 300 or self.segments[0].ycor() == 300 or self.segments[0].xcor() == -300 or self.segments[0].ycor() == -300 :
+        if self.segments[0].xcor() == 300 or self.segments[0].ycor() == 300 or self.segments[0].xcor() == -300 or self.segments[0].ycor() == -300Up:
             return True
         return False
 

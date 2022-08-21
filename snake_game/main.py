@@ -16,7 +16,7 @@ screen.bgcolor("black")
 screen.tracer(0)
 snake = Snake()
 screen.update()
-screen.screensize(600, 600)
+screen.setup(620, 620)
 
 screen.listen()
 
