@@ -2,13 +2,14 @@ from turtle import Turtle, Screen
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
-from random import randint
 import time
+
 
 def game_over():
     message = Turtle()
     message.color("white")
-    message.write("Game over!", align = "center", font = ("Arial", 24, "normal"))
+    message.write("Game over!", align="center", font=("Arial", 24, "normal"))
+
 
 screen = Screen()
 screen.bgcolor("black")
