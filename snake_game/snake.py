@@ -60,7 +60,9 @@ class Snake():
         return False
     
     def detect_wall_colision(self):
-        return abs(self.segments[0].xcor()) == 300 or abs(self.segments[0].ycor()) == 300
+        if self.segments[0].xcor() == 300 or self.segments[0].ycor() == 300 or self.segments[0].xcor() == -300 or self.segments[0].ycor() == -300:
+            return True
+        return False
 
     def add_segment(self, food):
         self.len += 1
